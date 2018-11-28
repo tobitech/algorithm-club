@@ -1,0 +1,5 @@
+D:\WorkSpace\algorithm-club\C#\Palindrome\Palindrome\bin\Debug\Palindrome.exe.config
+D:\WorkSpace\algorithm-club\C#\Palindrome\Palindrome\bin\Debug\Palindrome.exe
+D:\WorkSpace\algorithm-club\C#\Palindrome\Palindrome\bin\Debug\Palindrome.pdb
+D:\WorkSpace\algorithm-club\C#\Palindrome\Palindrome\obj\Debug\Palindrome.exe
+D:\WorkSpace\algorithm-club\C#\Palindrome\Palindrome\obj\Debug\Palindrome.pdb
