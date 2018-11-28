@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\WorkSpace\\algorithm-club\\C#\\fuzzbuzz\\fuzzbuzz\\fuzzbuzz.csproj",
+  "TargetFramework": "v4.5.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
