@@ -1,0 +1,27 @@
+package java;
+/*
+ FuzzBuzz Algorithm.
+ This Algorithm is to check and return the number that is divisible by 3 as Fuzz, by 5 as Buzz and by both as FezzBuzz.
+ What is Palidrome? - https://en.wikipedia.org/wiki/Palindrome
+ */
+
+import java.io.IOException;
+import static java.lang.System.out;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Algorithems{
+    private static final Scanner in = new Scanner(System.in);
+ 
+    public static void main(String[] args) throws IOException {
+        out.println(fuzzBuzz(15));
+        in.close(); 
+    }
+   
+  static String fuzzBuzz(int number){  
+       return number%3 == 0 && number%5==0 ? "FuzzBuzz" : number%3 == 0 ? "Fuzz" : number % 5==0 ? "Buzz" : "";
+   }
+}
