@@ -1,0 +1,50 @@
+package java;
+/*
+ Palindrome Algorithm.
+ This Algorithm is to check and return the number of palindromes in a sentence.
+ What is Palidrome? - https://en.wikipedia.org/wiki/Palindrome
+ */
+
+// Task
+// Implement a function that will tell me for each palidrome, how many times it occurs. For example
+// ["Civi": 1, "madam": 1, "kayak": 1, "anna": 2, "racecar": 1]
+
+import java.io.IOException;
+import static java.lang.System.out;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Algorithems{
+    private static final Scanner in = new Scanner(System.in);
+ 
+    public static void main(String[] args) throws IOException {
+        String [] test = {"wale", "madam", "Civi", "kayak", "anna", "anna", "anna", "racecar"}; 
+        out.println(palidrome(test));
+        in.close(); 
+    }
+   
+   static Map<String, Integer> palidrome(String [] words){
+        Map<String, Integer> map = new HashMap<>();
+        String reverse = "";
+              
+      for(String w : words){
+            String [] spl = w.split("");
+            for(int x=spl.length-1; x>=0; x--){
+               reverse+=spl[x];
+            }
+            
+            if(w.equals(reverse)){
+                if(map.containsKey(w)){
+                    map.replace(w, map.get(w)+1);
+                }else{
+                    map.put(w, +1);
+                }
+            }
+            reverse = "";
+      }
+      return map;
+   }
+}
